@@ -164,3 +164,13 @@ call s:hifg("rubyMethod"     ,"#DDE93D","Yellow",77) " 191
 "
 highlight DiffAdded guifg=White guibg=DarkGreen
 highlight DiffRemoved guifg=White guibg=DarkRed 
+
+" ===========================================
+" Settings below here are personal customisations,
+" not part of the official krunktastic release.
+" ===========================================
+
+" These from railscasts theme (http://www.vim.org/scripts/script.php?script_id=2175):
+highlight rubyConstant              guifg=#DA4939 ctermfg=167
+highlight rubyPredefinedConstant    guifg=#DA4939 ctermfg=167
+highlight rubyStringDelimiter       guifg=#A5C261 ctermfg=143
