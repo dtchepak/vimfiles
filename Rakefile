@@ -12,6 +12,7 @@ task :update_submodules do
     next unless File.directory?(File.join(path, '.git'))
     Dir.chdir(path) do
       puts "Updating '#{path}' bundle..."
+      system 'git checkout master'
       system 'git pull'
     end
   end
