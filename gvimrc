@@ -1,6 +1,10 @@
 set vb t_vb= " Re-Disable visual bell
 
-set guifont=Inconsolata\ Medium\ 12
+if has("win32")
+    set guifont=Inconsolata\ Medium\ 14
+else
+    set guifont=Inconsolata:h16
+endif
 set antialias
 
 " Hide toolbar and menus.
