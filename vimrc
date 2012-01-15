@@ -6,13 +6,13 @@ set nowritebackup
 set noswapfile
 
 scriptencoding utf-8
-set spell
+" set spell
 
 " INDENTS
-filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+filetype plugin indent on
 
 " SEARCH
 set incsearch
@@ -50,7 +50,7 @@ set wildmode=list:longest,full
 set backspace=indent,eol,start
 let mapleader = ","
 
-" Clear highlights on escape
+"Clear highlights on escape
 nnoremap <esc> :noh<return><esc>
 
 "Mapping for quick directory change
@@ -66,4 +66,7 @@ vnoremap k gk
 map <C-S-tab> :bprev<CR>
 map <C-tab> :bnext<CR>
 
+"Auto-complete
+imap <C-space> <C-p>
+imap <C-S-space> <C-n>
 
