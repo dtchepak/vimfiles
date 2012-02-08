@@ -23,7 +23,7 @@ set smartcase
 
 " APPEARANCE
 syntax enable
-colorscheme krunktastic 
+colorscheme molokai 
 set vb t_vb= " Disable visual bell
 
 set laststatus=2 " Always show status bar
