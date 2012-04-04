@@ -19,3 +19,6 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = http://github.com/tomasr/molokai.git
+[submodule "bundle/vim-pandoc"]
+	path = bundle/vim-pandoc
+	url = http://github.com/vim-pandoc/vim-pandoc.git
