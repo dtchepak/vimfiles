@@ -70,3 +70,8 @@ map <C-tab> :bnext<CR>
 imap <C-space> <C-p>
 imap <C-S-space> <C-n>
 
+
+" =================
+" PLUGIN CONFIG
+" =================
+let g:pandoc_no_folding = 1
