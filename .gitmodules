@@ -22,6 +22,3 @@
 [submodule "bundle/vim-pandoc"]
 	path = bundle/vim-pandoc
 	url = http://github.com/vim-pandoc/vim-pandoc.git
-[submodule "bundle/vim-scratch"]
-	path = bundle/vim-scratch
-	url = http://github.com/kana/vim-scratch
