@@ -50,6 +50,9 @@ set wildmode=list:longest,full
 set backspace=indent,eol,start
 let mapleader = ","
 
+"Use 'jj' to exit insert mode
+inoremap jj <esc>
+
 "Clear highlights on escape
 nnoremap <esc> :noh<return><esc>
 
