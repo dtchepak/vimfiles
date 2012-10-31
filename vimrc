@@ -54,7 +54,7 @@ let mapleader = ","
 inoremap jj <esc>
 
 "Clear highlights on escape
-nnoremap <esc> :noh<return><esc>
+nnoremap <return> :noh<return><return>
 
 "Mapping for quick directory change
 map <leader>cd :cd %:p:h<CR>
