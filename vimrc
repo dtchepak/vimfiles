@@ -79,3 +79,6 @@ imap <C-S-space> <C-n>
 " =================
 let g:pandoc_no_folding = 1
 let g:pandoc_no_empty_implicits = 1
+
+map <leader>t :GhcModType<CR>
+map <leader>not :GhcModTypeClear<CR>
