@@ -73,6 +73,11 @@ map <C-tab> :bnext<CR>
 imap <C-space> <C-p>
 imap <C-S-space> <C-n>
 
+"Unicode shortcuts
+" - lambda
+inoremap <A-l> <C-v>u3bb<Space>
+" - right arrow
+inoremap <A--> <C-v>u2192<Space>
 
 " =================
 " PLUGIN CONFIG
