@@ -1,19 +1,10 @@
-desc 'Pulls in all submodule bundles'
+desc 'Initialise NeoBundle'
 task :default do
-  system 'git submodule init'
-  system 'git submodule update'
+  system 'git clone https://github.com/Shougo/neobundle.vim bundle/neobundle.vim'
+  system 'vim +NeoBundleInstall +qall'
 end
 
-# Src: https://github.com/thomasjo/dotfiles/blob/master/Rakefile
-desc 'Updates all Git submodules in the bundle directory.'
-task :update_submodules do
-  bundle_path = File.join('**', 'bundle', '**', 'vim-*')
-  Dir.glob(bundle_path) do |path|
-    next unless File.directory?(File.join(path, '.git'))
-    Dir.chdir(path) do
-      puts "Updating '#{path}' bundle..."
-      system 'git checkout master'
-      system 'git pull'
-    end
-  end
+desc 'Update plugins'
+task :update_plugins do
+  system 'vim +NeoBundleInstall!'
 end

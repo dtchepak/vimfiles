@@ -1,5 +1,20 @@
 set nocompatible
-call pathogen#infect()
+
+" START NEOBUNDLE CONFIG
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim' " Let NeoBundle manage NeoBundle (required)
+
+" Plugins
+NeoBundle 'tomasr/molokai'
+
+call neobundle#end()
+" END NEOBUNDLE CONFIG
+
+filetype plugin indent on
+
+" Check for uninstalled bundles on startup and prompt to install.
+NeoBundleCheck
 
 set nobackup
 set nowritebackup
@@ -12,7 +27,6 @@ scriptencoding utf-8
 set tabstop=4
 set shiftwidth=4
 set expandtab
-filetype plugin indent on
 
 " SEARCH
 set incsearch
