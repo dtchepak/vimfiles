@@ -7,7 +7,27 @@ NeoBundleFetch 'Shougo/neobundle.vim' " Let NeoBundle manage NeoBundle (required
 
 " Plugins
 NeoBundle 'tomasr/molokai'
-
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'fsharp/vim-fsharp', {
+\ 'description': 'F# support for Vim',
+\ 'lazy': 1,
+\ 'autoload': {'filetypes': 'fsharp'},
+\ 'build': {
+\   'unix':  'make fsautocomplete',
+\ },
+\ 'build_commands': ['curl', 'make', 'mozroots', 'touch', 'unzip'],
+\}
 call neobundle#end()
 " END NEOBUNDLE CONFIG
 
@@ -88,4 +108,6 @@ let g:pandoc_no_empty_implicits = 1
 
 map <leader>t :GhcModType<CR>
 map <leader>not :GhcModTypeClear<CR>
+map <leader>i :GhcModInfo<CR>
+map <leader>I :GhcModInfoPreview<CR>
 
