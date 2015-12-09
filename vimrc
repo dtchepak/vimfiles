@@ -16,18 +16,8 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'lambdatoast/elm.vim'
-NeoBundle 'fsharp/vim-fsharp', {
-\ 'description': 'F# support for Vim',
-\ 'lazy': 1,
-\ 'autoload': {'filetypes': 'fsharp'},
-\ 'build': {
-\   'unix':  'make fsautocomplete',
-\ },
-\ 'build_commands': ['curl', 'make', 'mozroots', 'touch', 'unzip'],
-\}
 call neobundle#end()
 " END NEOBUNDLE CONFIG
 
