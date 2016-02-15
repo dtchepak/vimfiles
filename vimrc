@@ -19,6 +19,8 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'vim-pandoc/vim-pandoc'
+NeoBundle 'vim-pandoc/vim-pandoc-syntax'
 call neobundle#end()
 " END NEOBUNDLE CONFIG
 
@@ -94,11 +96,10 @@ map <C-tab> :bnext<CR>
 " =================
 " PLUGIN CONFIG
 " =================
-let g:pandoc_no_folding = 1
-let g:pandoc_no_empty_implicits = 1
-
 map <leader>t :GhcModType<CR>
 map <leader>not :GhcModTypeClear<CR>
 map <leader>i :GhcModInfo<CR>
 map <leader>I :GhcModInfoPreview<CR>
 
+let g:pandoc#modules#disabled = ["folding"]
+let g:pandoc#syntax#conceal#use = 0
