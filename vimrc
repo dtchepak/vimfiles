@@ -18,6 +18,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 \ }
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 call neobundle#end()
 " END NEOBUNDLE CONFIG
 
