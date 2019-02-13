@@ -7,17 +7,6 @@ NeoBundleFetch 'Shougo/neobundle.vim' " Let NeoBundle manage NeoBundle (required
 
 " Plugins
 NeoBundle 'tomasr/molokai'
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'vim-pandoc/vim-pandoc'
 NeoBundle 'vim-pandoc/vim-pandoc-syntax'
